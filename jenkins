@@ -33,11 +33,7 @@ pipeline {
             }
         }
 
-        stage('Build Application') {
-            steps {
-                sh 'dotnet build'
-            }
-        }
+    
 
         stage('Run Unit Tests') {
             steps {
